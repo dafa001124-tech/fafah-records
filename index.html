@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta name="build-revision" content="4fd537e14ce0">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Welcome to fafa’s portfolio 2026. Creative development, Motion and 3D Modeling.">
+  <title>FAFA RECORDS</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2231%22%20fill%3D%22%23171717%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23414141%22%20stroke-width%3D%221%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2226%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2222%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2218%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2212%22%20fill%3D%22%23d9533f%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%223%22%20fill%3D%22%23f7f1df%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="./style.4fd537e14ce0.css">
+  <link rel="stylesheet" href="./glass.4fd537e14ce0.css">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/cd-drafts/01.10ca5c1cd0.webp">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/cd-drafts/02.51982ff28d.webp">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/cd-drafts/03.13dac42af4.webp">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/cd-drafts/04.19c727d043.webp">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/cd-drafts/05.7a6aace9dc.webp">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/cd-drafts/06.7e23a56ab6.webp">
+<link rel="preload" as="image" crossorigin="anonymous" fetchpriority="low" href="./assets/walnut-v2.webp">
+</head>
+<body data-view="home" data-loading="true">
+  <div id="site-loader" role="status" aria-label="正在加载作品集">
+    <div class="loading-record" aria-hidden="true"><span></span></div>
+    <div class="loading-error" hidden><p>加载时间有点长，请刷新重试。</p><button type="button" onclick="location.reload()">重新加载</button></div>
+  </div>
+  <script>
+    (() => {
+      const loader = document.getElementById('site-loader');
+      const started = performance.now();
+      let finished = false;
+      const watchdog = setTimeout(() => {
+        if (finished) return;
+        loader.dataset.failed = 'true';
+        loader.setAttribute('aria-label', '加载时间较长，可以刷新重试');
+        loader.querySelector('.loading-error').hidden = false;
+      }, 30000);
+      function reveal(failed) {
+        if (finished) return;
+        finished = true;
+        clearTimeout(watchdog);
+        setTimeout(() => {
+          document.body.removeAttribute('data-loading');
+          loader.dataset.leaving = 'true';
+          setTimeout(() => loader.remove(), 450);
+        }, failed ? 0 : Math.max(0, 1100 - (performance.now() - started)));
+      }
+      document.addEventListener('portfolio-ready', () => reveal(false), {once:true});
+      document.addEventListener('portfolio-error', () => reveal(true), {once:true});
+    })();
+  </script>
+  <noscript><style>#site-loader{display:none}body[data-loading]>:not(#site-loader){visibility:visible}</style><p class="viewer-fallback">请启用 JavaScript 以浏览此作品集。</p></noscript>
+  <main id="stage" aria-busy="true" aria-label="立式黑胶唱片机。首页点击皮带轮开关，或按回车、空格播放，再向下滚动或按PageDown进入Projects；点击红绿标签唱片进入换唱片页面；列表第一张原始黑胶对应About。左右拖动或触屏滑动换片，点击唱片装回机器。浏览时左右方向键换片，回车装回唱片，Escape返回。装回后点击View project查看作品，原始黑胶点击About查看个人介绍。机身状态下点唱臂播放，右侧旋钮调音量，空白拖动旋转。" tabindex="0"></main>
+  <header id="site-header">
+    <nav class="primary-nav" aria-label="Main navigation">
+      <button id="nav-home" class="image-button" type="button" aria-label="Home" aria-current="page"><img src="./assets/ui/home.png" alt="" width="351" height="113" draggable="false"></button>
+      <button id="nav-projects" class="image-button" type="button" aria-label="Projects"><img src="./assets/ui/projects.png" alt="" width="351" height="113" draggable="false"></button>
+      <button id="nav-about" class="image-button" type="button" aria-label="About"><img src="./assets/ui/about.png" alt="" width="351" height="113" draggable="false"></button>
+    </nav>
+    <button id="brand-home" class="brand-button" type="button" aria-label="fafah — Home"><span class="brand-crop"><img src="./assets/ui/brand.png" alt="" width="755" height="169" draggable="false"></span></button>
+    <button id="nav-contact" class="image-button contact-button" type="button" aria-label="Contact"><img src="./assets/ui/contact.png" alt="" width="351" height="113" draggable="false"></button>
+    <button id="sound-toggle" type="button" aria-label="静音" aria-pressed="false" title="静音音效与音乐">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M10 5 5 9H2v6h3l5 4Z"/>
+        <path class="sound-waves" d="M14 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>
+        <path class="sound-muted" d="m15 9 6 6m0-6-6 6"/>
+      </svg>
+    </button>
+  </header>
+  <div id="site-intro"><img src="./assets/ui/intro.png" alt="Welcome to fafa’s portfolio 2026. FOCUS ON Creative development / Motion / 3D Modeling" width="2044" height="198" draggable="false"></div>
+  <button id="home-scroll-hint" type="button" aria-label="Explore projects" hidden>SCROLL OR TAP TO EXPLORE <span aria-hidden="true">↓</span></button>
+  <script type="module" src="./app.4fd537e14ce0.js"></script>
+</body>
+</html>
